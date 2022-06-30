@@ -1,0 +1,28 @@
+---
+title: "Useful links"
+output: html_document
+---
+
+
+**Links relevant for sea bass (Dicentrarchus labrax) in divisions 4.b–c, 7.a, and 7.d–h (central and southern North Sea, Irish Sea, English Channel, Bristol Channel, and Celtic Sea)**
+
+<br>
+
+[ICES advice on fishing opportunities for 2022](https://www.ices.dk/sites/pub/Publication%20Reports/Advice/2021/2021/bss.27.4bc7ad-h.pdf)
+
+
+[Report section for sea bass of the 2021 Working Group for the Celtic Seas Ecoregion (WGCSE) 2020](https://www.ices.dk/sites/pub/Publication%20Reports/Expert%20Group%20Report/Fisheries%20Resources%20Steering%20Group/2021/WGCSE/31_Section_29_Seabass_4bc7d_h_2021.pdf)
+
+
+[Stock annex](https://www.ices.dk/sites/pub/Publication%20Reports/Stock%20Annexes/2020/bss-47_SA.pdf)
+
+
+[WGCSE](https://www.ices.dk/community/groups/Pages/WGCSE.aspx)
+
+
+[European Commission sea bass webpage](https://ec.europa.eu/fisheries/cfp/fishing_rules/sea-bass_en)
+
+
+[Brief analysis of the data received in response to the 2020 data call on landings by vessel and métier for sea bass (Dicentrarchus labrax) in divisions 4.b–c, 7.a, and 7.d–h](http://www.ices.dk/sites/pub/Publication%20Reports/Advice/2020/2020/ts.2020.01.pdf)
+
+<br>
