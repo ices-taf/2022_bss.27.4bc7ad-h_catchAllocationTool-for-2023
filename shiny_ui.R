@@ -5,7 +5,7 @@ require(markdown)
 require(dplyr)
 require(ggplot2)
 require(plotly)
-require(icesTAF)
+require(TAF)
 require(tidyr)
 require(glue)
 

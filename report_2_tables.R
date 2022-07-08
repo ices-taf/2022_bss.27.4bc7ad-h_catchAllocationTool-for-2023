@@ -1,5 +1,5 @@
 
-library(icesTAF)
+library(TAF)
 library(icesAdvice)
 
 mkdir("report")

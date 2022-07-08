@@ -1,6 +1,6 @@
 
 # Load libraries
-library(icesTAF)
+library(TAF)
 library(dplyr)
 library(tidyr)
 

@@ -1,5 +1,5 @@
 
-library(icesTAF)
+library(TAF)
 
 age_data <- read.taf("data/age_data.csv")
 

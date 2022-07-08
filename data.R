@@ -3,7 +3,7 @@
 ## Before:
 ## After:
 
-library(icesTAF)
+library(TAF)
 
 mkdir("data")
 

@@ -1,4 +1,4 @@
-library(icesTAF)
+library(TAF)
 library(dplyr)
 library(rhandsontable)
 library(glue)

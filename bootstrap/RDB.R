@@ -10,7 +10,7 @@
 #' @tafAccess Public
 #' @tafSource script
 
-library(icesTAF)
+library(TAF)
 library(readr)
 taf.library(icesSharePoint)
 

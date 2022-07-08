@@ -1,6 +1,6 @@
 
 
-library(icesTAF)
+library(TAF)
 library(rmarkdown)
 
 

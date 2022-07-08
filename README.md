@@ -3,8 +3,8 @@ EU DGMARE Technical Service: Seabass Simulation Tool
 
 to run this repo use:
 ```r
-install.packages("icesTAF")
-install.packages(icesTAF::deps(installed = FALSE))
+install.packages("TAF")
+install.packages(TAF::deps(installed = FALSE))
 
 taf.bootstrap()
 sourceAll()
