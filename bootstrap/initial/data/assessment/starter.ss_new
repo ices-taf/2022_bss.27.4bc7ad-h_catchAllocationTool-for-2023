@@ -1,5 +1,8 @@
 #V3.24U
-#C Bass initial assessment
+#C starter file written by R function SS_writestarter
+#C rerun model to get more complete formatting in starter.ss_new
+#C should work with SS version: 3.24 or earlier
+#C file write time: 2021-05-09 14:53:10
 BassIVVII.dat
 BassIVVII.ctl
 0 # 0=use init values in control file; 1=use ss3.par
@@ -16,7 +19,7 @@ BassIVVII.ctl
 8 # MCeval thin interval
 0 # jitter initial parm value by this fraction
 1983 # min yr for sdreport outputs (-1 for styr)
-2021 # max yr for sdreport outputs (-1 for endyr; -2 for endyr+Nforecastyrs
+2022 # max yr for sdreport outputs (-1 for endyr; -2 for endyr+Nforecastyrs
 0 # N individual STD years 
 #vector of year values 
 

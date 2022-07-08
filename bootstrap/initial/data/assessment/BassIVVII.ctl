@@ -22,7 +22,7 @@
 #  -------------------------
 1 				#_Nblock_Patterns
 1 #_blocks_per_pattern
-2015 2020 # begin and end years of blocks in first pattern
+2015 2021 # begin and end years of blocks in first pattern
 #
 
 #  -------------------------
@@ -108,18 +108,18 @@
 
 1 	#do_recdev:  0=none; 1=devvector; 2=simple deviations
 1955 	# first year of main recr_devs; early devs can preceed this era
-2017 	# last year of main recr_devs; update - Youngest survey age 2gp Endyear-2;
+2018 	# last year of main recr_devs; update - Youngest survey age 2gp Endyear-2;
 3 	#_recdev phase
 1 	# (0/1) to read 13 advanced options
 0 							#_recdev_early_start (0=none; neg value makes relative to recdev_start)
 -4 							#_recdev_early_phase
 0 							#_forecast_recruitment phase (incl. late recr) (0 value resets to maxphase+1)
 1 							#_lambda for prior_fore_recr occurring before endyr+1
-1973.3 #_last_early_yr_nobias_adj_in_MPD
-1982.1 #_first_yr_fullbias_adj_in_MPD
-2017.9 #_last_yr_fullbias_adj_in_MPD
-2018.6 #_first_recent_yr_nobias_adj_in_MPD
-0.915 #_max_bias_adj_in_MPD (1.0 to mimic pre-2009 models)
+1973.5244 #_last_early_yr_nobias_adj_in_MPD
+1981.6947 #_first_yr_fullbias_adj_in_MPD
+2018.8760 #_last_yr_fullbias_adj_in_MPD
+2019.7167 #_first_recent_yr_nobias_adj_in_MPD
+   0.9153 #_max_bias_adj_in_MPD (1.0 to mimic pre-2009 models)
 0 							#_period of cycles in recruitment (N parms read below)
 -5 							#min rec_dev
 5 							#max rec_dev
@@ -285,8 +285,8 @@
 0 0 0 0 0 0 0 0 0  			#_add_to_survey_CV                        
 0 0 0 0 0 0 0 0	0 			#_add_to_discard_stddev                        
 0 0 0 0 0 0 0 0	0  			#_add_to_bodywt_CV                        
-0.127597    0.146977    0.153673    0.117151    1	1	1	0.342860    1	#_mult_by_lencomp_N
-0.229988    0.120293    0.347828    0.117815    1	1	1	1	1	#_mult_by_agecomp_N
+0.128301   0.149147    0.151244   0.123045   1	1	1	0.343654     1	#_mult_by_lencomp_N
+0.23243 0.124555 0.349464 0.119925 1	1	1	1	1	#_mult_by_agecomp_N
 1 1 1 1 1 1 1 1	1 			#_mult_by_size-at-age_N	
 
 #
