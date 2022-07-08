@@ -7,9 +7,9 @@ mkdir("data")
 globals <-
   list(
     # years for selectivity calcs
-    yr_idx = c(2017, 2018),
+    yr_idx = c(2019, 2020),
     ages = 0:16,
-    current_year = 2021
+    current_year = 2022
   )
 
 save(globals, file = "data/globals.RData")
