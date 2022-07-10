@@ -14,11 +14,11 @@ This tool was developed as a [technical service](TechnicalService.pdf) to DGMARE
 
 <br>
 
-**The Seabass tool is not an ICES advice and cannot be applied as such**; the ICES advice on Seabass can be found here: [ICES, 2021a](https://www.ices.dk/sites/pub/Publication%20Reports/Advice/2021/2021/bss.27.4bc7ad-h.pdf)
+**The Seabass tool is not an ICES advice and cannot be applied as such**; the ICES advice on Seabass can be found here: [ICES, 2022a](https://doi.org/10.17895/ices.advice.19447796)
 
 <br>
 
-The sea bass catch allocation tool was developed to allow managers and stakeholders to test multiple catch allocation scenarios by gear and different regulations for recreational catches, using the ICES catch advice (ICES, 2021b) as a maximum. It should be noted that the tool is assuming that each vessel will uptake its full catch allocation.
+The sea bass catch allocation tool was developed to allow managers and stakeholders to test multiple catch allocation scenarios by gear and different regulations for recreational catches, using the ICES catch advice [(ICES, 2022a)](https://doi.org/10.17895/ices.advice.19447796) as a maximum. It should be noted that the tool is assuming that each vessel will uptake its full catch allocation.
 
 <br>
 
@@ -26,7 +26,7 @@ None of the scenarios nor implementations are specific ICES recommendations.
 
 <br>
 
-The sea bass catch allocation tool was developed to be used **exclusively** for sea bass (*Dicentrarchus labrax*) in divisions 4.b–c, 7.a, and 7.d–h (central and southern North Sea, Irish Sea, English Channel, Bristol Channel, and Celtic Sea) in 2021. The basic assumptions used in the tool to forecast the catches are closely linked to the assessment of this stock (ICES, 2021a) and any attempt to use it for other stocks will not produce sensible results. The Seabass tool is updated annually with updated data produced by the Working Group for the Celtic Seas Ecoregion  ([WGCSE](https://www.ices.dk/community/groups/Pages/WGCSE.aspx))
+The sea bass catch allocation tool was developed to be used **exclusively** for sea bass (*Dicentrarchus labrax*) in divisions 4.b–c, 7.a, and 7.d–h (central and southern North Sea, Irish Sea, English Channel, Bristol Channel, and Celtic Sea) in 2023. The basic assumptions used in the tool to forecast the catches are closely linked to the assessment of this stock [(ICES, 2022b)](https://ices-library.figshare.com/articles/report/Working_Group_for_the_Celtic_Seas_Ecoregion/19863796?file=36099110) and any attempt to use it for other stocks will not produce sensible results. The Seabass tool is updated annually with updated data produced by the Working Group for the Celtic Seas Ecoregion  ([WGCSE](https://www.ices.dk/community/groups/Pages/WGCSE.aspx))
 
 
 <br>
@@ -41,9 +41,9 @@ Although, this tool is designed to be in line with the basic assumptions used in
 ***
 
 
-ICES.2021a. Working Group for the Celtic Seas Ecoregion (WGCSE). ICES Scientific Reports. 3:56. 1082 pp. https://doi.org/10.17895/ices.pub.8139
+ICES. 2022a. Seabass (Dicentrarchus labrax) in Divisions 4.b-c, 7.a, and 7.d-h (central and southern North Sea, Irish Sea, English Channel, Bristol Channel, and Celtic Sea). In Report of the ICES Advisory Committee, 2022. ICES Advice 2022, bss.27.4bc7ad-h. https://doi.org/10.17895/ices.advice.19447796
 
-ICES.2021b. Sea  bass(*Dicentrarchus  labrax*)  in  divisions 4.b–c,7.a,  and 7.d–h (central  and southern  North  Sea,  Irish  Sea,  English  Channel,  Bristol  Channel,  and  Celtic  Sea. In Report of the ICES Advisory Committee, 2021. ICES Advice 2021, bss.27.4bc7ad-h. https://doi.org/10.17895/ices.advice.7733
+ICES. 2022b. Working Group for the Celtic Seas Ecoregion (WGCSE). Draft report. ICES Scientific Reports. 4:45. http://doi.org/10.17895/ices.pub.19863796. Publication of the full report is expected end of 2022
 
 
 
