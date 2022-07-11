@@ -12,7 +12,7 @@ output: html_document
 
 
 1. There is only one catch option available to choose from:
-  1. F<sub>MSY</sub> × SSB<sub>2022</sub> / MSY B<sub>trigger</sub>
+  1. F<sub>MSY</sub> × SSB<sub>2023</sub> / MSY B<sub>trigger</sub>
 2. Select the time step to be used in the allocation simulation.
 3. Select the management options to be applied to the recreational component (default options are the current management measures in place).
 4. Input vessel catch allocation by gears in the table (in tonnes per vessel).
