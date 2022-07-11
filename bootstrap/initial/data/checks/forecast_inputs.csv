@@ -1,4 +1,4 @@
-age ,N_2021 ,stkwt ,mat   ,F_age_land_2021 ,F_age_disc_2021 ,weights_age ,weights_age_disc ,ret_frac ,F_age_rec_2021 ,weights_age_rec ,M
+age ,N_2022 ,stkwt ,mat   ,F_age_land_2022 ,F_age_disc_2022 ,weights_age ,weights_age_disc ,ret_frac ,F_age_rec_2022 ,weights_age_rec ,M
 0,9696,0.003,0,0,0,0,0,0,0,0.02,0.24
 1,7627,0.024,0,0,0,0.119,0.119,0.207,0,0.079,0.24
 2,5998,0.097,0,0,0,0.238,0.238,0.209,0.001056818,0.191,0.24

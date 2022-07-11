@@ -10,16 +10,16 @@ mkdir("data")
 load("data/globals.RData")
 
 age_data <- read.taf("data/age_data.csv")
-advice <- read.taf(taf.data.path("other", "bss.27.4bc7ad-h 2019 Advice scenarios.csv"))
+advice <- read.taf(taf.data.path("other", "bss.27.4bc7ad-h Advice scenarios.csv"))
 
 
 other_data <- list()
 
 # for the % change in catch options
 ## ssb at start of advice year
-other_data$ssb_ref <- 12052
+other_data$ssb_ref <- globals$ssb_ref
 # total catch
-other_data$advice_ref <- list(MSYlow = 1680, MSY = 2000)
+other_data$advice_ref <- globals$advice_ref
 
 ## Discards
 # discard proportions by gear (from last 3 years of French and English data)
@@ -42,11 +42,11 @@ other_data$AdviceScenarios <- advice[1,]
 
 ## ICES advice (http://ices.dk/sites/pub/Publication%20Reports/Advice/2019/2019/bss.27.4bc7ad-h.pdf)
 # Options for MAP
-other_data$ICESadvMSY <- advice[trimws(advice$Basis) == "FMSY", "Total catch (2022)"]
-other_data$ICESadvMSYlow <- advice[trimws(advice$Basis) == "FMSY lower", "Total catch (2022)"]
+other_data$ICESadvMSY <- advice[trimws(advice$Basis) == "FMSY", paste0("Total catch (", globals$current_year + 1, ")")]
+other_data$ICESadvMSYlow <- advice[trimws(advice$Basis) == "FMSY lower", paste0("Total catch (", globals$current_year + 1, ")")]
 # Recreational catches from catch scenario (not used as a limit, just for comparison)
-other_data$ICESadvMSYRec <- advice[trimws(advice$Basis) == "FMSY", "Recreational removals (2022)"]
-other_data$ICESadvMSYlowRec <- advice[trimws(advice$Basis) == "FMSY lower", "Recreational removals (2022)"]
+other_data$ICESadvMSYRec <- advice[trimws(advice$Basis) == "FMSY", paste0("Recreational removals (", globals$current_year + 1, ")")]
+other_data$ICESadvMSYlowRec <- advice[trimws(advice$Basis) == "FMSY lower", paste0("Recreational removals (", globals$current_year + 1, ")")]
 
 
 # Fbar of recreational fishery in 2012

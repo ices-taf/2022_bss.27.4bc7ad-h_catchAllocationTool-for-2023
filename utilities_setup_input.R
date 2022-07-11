@@ -40,16 +40,16 @@ setup_input <- function(TimeStep = c("1", "12"), AdviceType = "MSY",
   RecF <- source_data$RecFs[OpenSeason, BagLimit + 1]
 
   ## calculate recreational F based on management measures
-  # uses selected multiplier and 2012+2019 F@A and Fbar to estimate 2020 F@A
-  age_data$f_age_rec_2021 <-
+  # uses selected multiplier and 2012+2019 F@A and Fbar to estimate 2022 F@A
+  age_data$f_age_rec_2022 <-
     RecF * source_data$Fbar_rec_2012 *
-      age_data$F_age_rec_2021 / mean(age_data$F_age_rec_2021[5:16])
+      age_data$F_age_rec_2022 / mean(age_data$F_age_rec_2022[5:16])
 
   # Mean F for recreational ages 4-15
-  FbarRec <- mean(age_data$f_age_rec_2021[5:16])
+  FbarRec <- mean(age_data$f_age_rec_2022[5:16])
 
   # Get recreational catch at age and total catch
-  age_data$catchRec <- age_data$N * (1 - exp(-totZ)) * age_data$f_age_rec_2021 / totZ
+  age_data$catchRec <- age_data$N * (1 - exp(-totZ)) * age_data$f_age_rec_2022 / totZ
   recCatch <- sum(age_data$catchRec * age_data$weights_age_rec)
 
   # Calculate what is left for the commercial fleets

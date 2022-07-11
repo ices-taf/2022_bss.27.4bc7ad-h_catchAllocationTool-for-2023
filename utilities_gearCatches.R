@@ -22,7 +22,7 @@ gearCatches <- function(fmults, age_data, selectivity_age, TimeStep, other_data,
   # calculate Fs and Z
   fmort <- as.matrix(selectivity_age[gears]) * rep(fmults[1:ngears], each = nages)
   dismort <- age_data$Discard_Sel * fmults[ngears + 1]
-  zmort <- apply(fmort, 1, sum) + dismort + (age_data$f_age_rec_2021 + age_data$M) / TimeStep
+  zmort <- apply(fmort, 1, sum) + dismort + (age_data$f_age_rec_2022 + age_data$M) / TimeStep
 
   gearCatches <- age_data$N * (1 - exp(-zmort)) * age_data$weights_age * cbind(fmort, Discards = dismort) / zmort
   projCatch <- colSums(gearCatches, na.rm = TRUE)
