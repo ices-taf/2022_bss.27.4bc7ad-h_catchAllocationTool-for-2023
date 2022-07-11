@@ -156,8 +156,8 @@ summarise_forecast <- function(forecast, input) {
   # recCatch
   FbarRec <- icesRound(input$FbarRec)
 
-  # SSB 2023
-  ssb2023 <- sum(forecast$initPop[, ncol(forecast$initPop)] * input$age_data$mat * input$age_data$stkwt)
+  # SSB 2024
+  ssb2024 <- sum(forecast$initPop[, ncol(forecast$initPop)] * input$age_data$mat * input$age_data$stkwt)
 
   list(
     realisedLandings = realisedLandings,
@@ -171,7 +171,7 @@ summarise_forecast <- function(forecast, input) {
     totCommCatch = totCommCatch,
     totCommLandings = totCommLandings,
     totCommDiscards = totCommDiscards,
-    ssb2023 = ssb2023,
+    ssb2024 = ssb2024,
     gearFTable = gearFTable
   )
 }
@@ -242,25 +242,18 @@ vclsGearTable <- function(forecast_summary, input) {
 forecastTable <- function(forecast_summary, input, other_data) {
 
   ## Forecast table outputs
-  out <- matrix(NA_character_, ncol = 12, nrow = 1, dimnames = list(
+  out <- matrix(NA_character_, ncol = 6, nrow = 1, dimnames = list(
     input$AdviceType,
     c(
-      "Basis", "Total Catch", "Commercial Landings", "Commercial discards", "Recreational removals", "Total F", "F Commercial landings",
-      "F Commercial discards", "F Recreational removals", "SSB (2023)", "% SSB change", "% Advice change"
+      "Basis", "Total Catch", "Total F", "SSB (2024)", "% SSB change", "% Advice change"
     )
   ))
 
   out[, "Basis"] <- "Simulated Scenario"
   out[, "Total Catch"] <- round(forecast_summary$totCommCatch + input$recCatch, 0)
-  out[, "Commercial Landings"] <- round(forecast_summary$totCommLandings, 0)
-  out[, "Commercial discards"] <- round(forecast_summary$totCommDiscards, 0)
-  out[, "Recreational removals"] <- round(input$recCatch, 0)
   out[, "Total F"] <- forecast_summary$Ftotbar
-  out[, "F Commercial landings"] <- forecast_summary$Flandbar
-  out[, "F Commercial discards"] <- forecast_summary$Fdisbar
-  out[, "F Recreational removals"] <- forecast_summary$FbarRec
-  out[, "SSB (2023)"] <- round(forecast_summary$ssb2023, 0)
-  out[, "% SSB change"] <- icesRound(100 * (forecast_summary$ssb2023 - other_data$ssb_ref) / other_data$ssb_ref)
+  out[, "SSB (2024)"] <- round(forecast_summary$ssb2024, 0)
+  out[, "% SSB change"] <- icesRound(100 * (forecast_summary$ssb2024 - other_data$ssb_ref) / other_data$ssb_ref)
   out[, "% Advice change"] <- icesRound(100 * ((forecast_summary$totCommCatch + input$recCatch) - other_data$advice_ref[[input$AdviceType]]) / other_data$advice_ref[[input$AdviceType]])
 
   # 2020 Advice sheet catch scenarios

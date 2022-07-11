@@ -9,8 +9,8 @@ comp <- intersect(names(data_check), names(age_data))
 
 tmp <-
   age_data[comp] %>%
-    rnd(c("N_2021"), 0) %>%
-    rnd("[^N_2021]", 3, grep = TRUE)
+    rnd(c("N_2022"), 0) %>%
+    rnd("[^N_2022]", 3, grep = TRUE)
 
 diff <- data_check[comp] - tmp
 
