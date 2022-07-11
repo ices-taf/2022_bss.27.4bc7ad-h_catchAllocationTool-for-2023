@@ -20,7 +20,7 @@ globals <-
     ## ssb at start of advice year
     ssb_ref = 12052,
     # total catch
-    advice_ref = list(MSYlow = 1680, MSY = 2000)
+    advice_ref = list(MSYlow = 1680, MSY = 2216)
   )
 
 save(globals, file = "data/globals.RData")

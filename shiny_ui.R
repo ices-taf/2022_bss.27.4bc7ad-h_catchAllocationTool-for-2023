@@ -17,7 +17,7 @@ allocations_inputpanel <-
     width = side_width,
     radioButtons(
       "AdviceType",
-      label = h4("2022 catch advice"),
+      label = h4("2023 catch advice"),
       choiceNames =
         list(
           HTML("F<sub>MSY</sub>")
@@ -129,7 +129,7 @@ allocations_resultspanel_wide <-
     column(12,
       conditionalPanel("output.hide_panel",
         wellPanel(
-          h5(helpText("Table 3: Forecast scenarios. Comparison between the simulated scenario (highlighted row) and the basis of ICES advice for 2022. Weights are in tonnes. Note that the '% Advice change' value is relative to the advice for the corresponding FMSY scenario for 2021 (2000 tonnes).")),
+          h5(helpText("Table 3: Forecast scenarios. Comparison between the simulated scenario (highlighted row) and the basis of ICES advice for 2023. Weights are in tonnes. Note that the '% Advice change' value is relative to the advice for the corresponding FMSY scenario for 2022 (2216 tonnes).")),
           br(),
           DT::dataTableOutput("forecastTable")
         )
@@ -183,6 +183,6 @@ ui <-
   position = "fixed-top",
 
   tags$script(HTML("var header = $('.navbar > .container-fluid');
-    header.append('<div style=\"float:right\"><a href=\"https://github.com/ices-taf/2020_bss.27.4bc7ad-h_catchAllocationTool\"><img src=\"GitHub-Mark-32px.png\" alt=\"alt\" style=\"margin-top: -14px; padding-right:5px;padding-top:25px;\"></a></div>');
+    header.append('<div style=\"float:right\"><a href=\"https://github.com/ices-taf/2022_bss.27.4bc7ad-h_catchAllocationTool-for-2023\"><img src=\"GitHub-Mark-32px.png\" alt=\"alt\" style=\"margin-top: -14px; padding-right:5px;padding-top:25px;\"></a></div>')
     console.log(header)"))
 )
