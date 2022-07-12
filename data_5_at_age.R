@@ -236,7 +236,7 @@ age_data$F_age_rec_2012 <- ifelse(is.nan(age_data$F_age_rec_2012), 0, age_data$F
 
 natage <-
   assessmt$natage %>%
-  filter(Yr == globals$current_year - 1 & `Beg/Mid` == "B") %>%
+  filter(Yr == globals$current_year & `Beg/Mid` == "B") %>%
   select("0":"30") %>%
   t() %>%
   c()
@@ -250,8 +250,8 @@ natage[1] <-
   gm()
 
 # current year age 1 replaced by SS3 survivor estimate at age 1 previous year * GM / SS3 estimate of age 0 previous year - 1
-natage[2] <- natage[2] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 2 & `Beg/Mid` == "B")[["0"]]
-natage[3] <- natage[3] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 3 & `Beg/Mid` == "B")[["0"]]
+natage[2] <- natage[2] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 1 & `Beg/Mid` == "B")[["0"]]
+natage[3] <- natage[3] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 2 & `Beg/Mid` == "B")[["0"]]
 
 # roll forward to current year!
 age_data$N_2022 <- natage
