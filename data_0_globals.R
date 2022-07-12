@@ -18,7 +18,7 @@ globals <-
     ),
     # for the % change in catch options
     ## ssb at start of advice year
-    ssb_ref = 12052,
+    ssb_ref = 12902,
     # total catch
     advice_ref = list(MSYlow = 1680, MSY = 2216)
   )
