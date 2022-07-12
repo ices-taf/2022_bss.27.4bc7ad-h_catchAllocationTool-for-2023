@@ -287,10 +287,7 @@ age_data <-
   )
 
 # overwrite till its fixed
-#warning("overwriting landings weights at age")
+warning("overwriting landings weights at age")
 age_data$weights_age <- read.taf(taf.data.path("checks", "forecast_inputs.csv"))$weights_age
-
-# not managed to get the Ns at age either...
-
 
 write.taf(age_data, dir = "data")
