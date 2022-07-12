@@ -236,7 +236,7 @@ age_data$F_age_rec_2012 <- ifelse(is.nan(age_data$F_age_rec_2012), 0, age_data$F
 
 natage <-
   assessmt$natage %>%
-  filter(Yr == 2021 & `Beg/Mid` == "B") %>%
+  filter(Yr == globals$current_year - 1 & `Beg/Mid` == "B") %>%
   select("0":"30") %>%
   t() %>%
   c()
@@ -249,11 +249,11 @@ natage[1] <-
   select("0") %>%
   gm()
 
-# current year age 1 replaced by SS3 survivor estimate at age 1, 2021 * GM / SS3 estimate of age 0, 2018
-natage[2] <- natage[2] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 1 & `Beg/Mid` == "B")[["0"]]
-natage[3] <- natage[3] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 2 & `Beg/Mid` == "B")[["0"]]
+# current year age 1 replaced by SS3 survivor estimate at age 1 previous year * GM / SS3 estimate of age 0 previous year - 1
+natage[2] <- natage[2] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 2 & `Beg/Mid` == "B")[["0"]]
+natage[3] <- natage[3] * natage[1] / filter(assessmt$natage, Yr == globals$current_year - 3 & `Beg/Mid` == "B")[["0"]]
 
-# roll forward to 2022!
+# roll forward to current year!
 age_data$N_2022 <- natage
 age_data$N <- c(natage[1], natage * exp(-age_data$Z_age_2022))[-(nrow(age_data) + 1)]
 
@@ -288,6 +288,9 @@ age_data <-
 
 # overwrite till its fixed
 #warning("overwriting landings weights at age")
-#age_data$weights_age <- read.taf(taf.data.path("checks", "forecast_inputs.csv"))$weights_age
+age_data$weights_age <- read.taf(taf.data.path("checks", "forecast_inputs.csv"))$weights_age
+
+# not managed to get the Ns at age either...
+
 
 write.taf(age_data, dir = "data")
