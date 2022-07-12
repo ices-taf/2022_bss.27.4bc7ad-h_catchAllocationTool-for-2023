@@ -18,3 +18,6 @@ then to run the app run:
 library(shiny)
 runApp("shiny")
 ```
+An example of a scenario run in the app:
+
+![image](https://user-images.githubusercontent.com/1502848/178517925-3edc1b9a-b438-42ea-ad74-10678237ea78.png)
