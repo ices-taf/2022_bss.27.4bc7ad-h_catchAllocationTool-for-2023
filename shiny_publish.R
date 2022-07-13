@@ -3,7 +3,7 @@ library(rsconnect)
 
 deployApp(
   appDir = "shiny",
-  appName = "seabass-catch-allocation-tool-test",
-  appTitle = "Seabass catch allocation tool-test",
+  appName = "seabass-catch-allocation-tool",
+  appTitle = "Seabass catch allocation tool",
   forceUpdate = TRUE
 )
